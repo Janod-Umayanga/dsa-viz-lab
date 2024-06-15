@@ -1,5 +1,6 @@
-package com.example.dsavizlab;
+package com.example.dsavizlab.controllers;
 
+import com.example.dsavizlab.MainApplication;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -12,11 +13,16 @@ import java.io.IOException;
 public class MainController {
 
     @FXML
-    protected void onGetStartedButtonClick(ActionEvent event) throws IOException {
-        loadPageOnSameWindow(event, "data-structures-view.fxml");
+    protected void OnGetStartedButtonClicked(ActionEvent event) throws IOException {
+        LoadPageOnSameWindow(event, "data-structures-view.fxml");
     }
 
-    protected void loadPageOnSameWindow(ActionEvent event, String xmlFileName) throws IOException {
+    @FXML
+    protected void OnArraysButtonClicked(ActionEvent event) throws IOException {
+        LoadPageOnSameWindow(event, "arrays-view.fxml");
+    }
+
+    protected void LoadPageOnSameWindow(ActionEvent event, String xmlFileName) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource(xmlFileName));
         Parent newRoot = fxmlLoader.load();
         Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();

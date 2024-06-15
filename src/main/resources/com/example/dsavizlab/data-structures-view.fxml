@@ -6,11 +6,11 @@
 
 <?import javafx.scene.control.Button?>
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.dsavizlab.MainController">
+      fx:controller="com.example.dsavizlab.controllers.MainController">
     <padding>
-        <Insets left="5.0" top="5.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
-    <Button text="Arrays" />
+    <Button text="Arrays" onAction="#OnArraysButtonClicked" />
     <Button text="Stacks" />
     <Button text="Queues" />
     <Button text="Linked Lists" />
