@@ -17,5 +17,5 @@
         <TextField fx:id="UserInputArrayLength" promptText="Length of the Array" />
         <Button text="Generate" onAction="#OnGenerateArrayClicked" />
     </HBox>
-    <HBox fx:id="ArrayView" alignment="CENTER" spacing="10.0" />
+    <HBox fx:id="ArrayView" alignment="CENTER" spacing="5.0" />
 </VBox>
