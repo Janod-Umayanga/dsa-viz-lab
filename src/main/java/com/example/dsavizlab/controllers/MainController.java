@@ -18,6 +18,11 @@ public class MainController {
     }
 
     @FXML
+    protected void OnBackButtonClicked(ActionEvent event) throws IOException {
+        LoadPageOnSameWindow(event, "data-structures-view.fxml");
+    }
+
+    @FXML
     protected void OnArraysButtonClicked(ActionEvent event) throws IOException {
         LoadPageOnSameWindow(event, "arrays-view.fxml");
     }
