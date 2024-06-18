@@ -21,4 +21,16 @@
         <Button text="Generate" onAction="#OnGenerateArrayClicked" />
     </HBox>
     <HBox fx:id="ArrayView" alignment="CENTER" spacing="5.0" />
+    <HBox fx:id="ArraySortingSection" alignment="CENTER" visible="false">
+        <VBox spacing="20.0">
+            <Label text="Sort the Array using one of the following Sorting Algorithms" />
+            <HBox alignment="CENTER" spacing="10.0">
+                <Button text="Selection Sort" onAction="#OnSelectionSortClicked"/>
+                <Button text="Insertion Sort" />
+                <Button text="Merge Sort" />
+                <Button text="Bubble Sort" />
+            </HBox>
+            <HBox fx:id="SortedArrayView" alignment="CENTER" spacing="5.0" />
+        </VBox>
+    </HBox>
 </VBox>
